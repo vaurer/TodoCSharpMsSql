@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TodoModelStoreContainer" CdmEntityContainer="DBEntities">
+    <EntitySetMapping Name="TodoTasks">
+      <EntityTypeMapping TypeName="TodoModel.TodoTask">
+        <MappingFragment StoreEntitySet="TodoTasks">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="taskName" ColumnName="taskName" />
+          <ScalarProperty Name="taskTime" ColumnName="taskTime" />
+          <ScalarProperty Name="isDone" ColumnName="isDone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
